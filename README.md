@@ -18,9 +18,7 @@ I used the twitter API to generate real time tweets on Kendrick Lamar. I searche
 
 
 ### Known Problems:
-
-I do not have any known problems regarding the functionalities of this project yet. I will document in this section when I find any issues.
-However, I had some issues while working on the project that I fixed later. Some are,
+ I had some issues while working on the project that I fixed later. Some are:
 
 * I struggled with parsing the json data intially. I solved this by looking at genius to see the way the response would be formatted.
 
