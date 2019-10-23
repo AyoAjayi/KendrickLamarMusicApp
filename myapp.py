@@ -56,7 +56,7 @@ def twitter_quotes():
     
 def get_songPlaying(song_id):
     song_id_url= "https://api.genius.com/songs/" + str(song_id)
-    song_id_genius_key = "sZD99vUmHfcsYnAwtmTIBWsDgTJZjO8qAdzKk5JgGxeMdM4gsktvql3il_0kw0-D"
+    song_id_genius_key = os.getenv("SongIDKey")
     song_id_headers = {
             "Authorization": "Bearer  " + song_id_genius_key
     }
