@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+    
+        body {
+      	  font-family: Helvetica;
+          background-color: white;
+          padding-top: 8px;
+          /*All items in the body grow at the same rate*/
+          display:flex;
+          margin-left:500px;
+        }
+        
+        .Border1{
+          border-color:white;
+          background: linear-gradient(to top, #3acfd5 0%, #3a4ed5 100%);
+          border-radius:10px;
+          border-style:dotted;
+          height:550px;
+          width: 370px;
+          }
+          
+        .Border1::before{
+          background: linear-gradient(to bottom, #3acfd5 0%, #3a4ed5 100%);
+          }
+        
+         .Border2{
+          border-style:dotted;
+          border-color:white;
+          border-radius:10px;
+          background: linear-gradient(to bottom, #3acfd5 0%, #3a4ed5 100%);
+          font-size: 20px;
+          color: white;
+          height:140px;
+          width: 370px;
+          text-align:center;
+          margin-left: 40px;
+          /*Puts the item relative to its normal position*/
+          position:relative;
+          bottom:-570px;
+          right:415px;
+          
+        }
+        
+        .Border2::before{
+          background: linear-gradient(to top, #3acfd5 0%, #3a4ed5 100%);
+        }
+        
+        .artistPhoto{
+         height:360px;
+         width:340px;
+         margin:15px;
+         border-radius:20px;
+         }
+         
+        .albumCover{
+        width: 120px;
+        height: 120px;
+        margin:22px;
+        border-radius: 50%;
+        }
+        
+        .songName{
+        color:black;
+        position: relative; 
+        top:-190px;
+        display:flex;
+        justify-content:center;
+        font-size:15px;
+        margin-left:110px;
+        	
+        }
+        .artistName{
+        position: relative; 
+        top:-168px;
+        font-size:25px;
+        margin-left:150px;
+        }
+        
+        .Song{
+        position: relative;
+        top:720px;
+        margin-left:-840px;
+          
+        }
+        
+    </style>
+  </head>
+  <body>
+    <section class="Border1">
+      <img src="{{photo}}" class = "artistPhoto" alt="Kendrick Lamar Photo" width="200" height = "200">
+      <img src="https://images.genius.com/25d8a9c93ab97e9e6d5d1d9d36e64a53.1000x1000x1.jpg" class = "albumCover" alt="Kendrick Lamar's Album cover" width="200" height = "200">
+        <div class="artistName">
+          <h4><a href = "https://genius.com/artists/Kendrick-lamar">{{artist}}</a></h4>
+        </div>
+      <h6 class ="songName">{{song}}</h6>
+    </section>
+    
+    <section class="Border2">
+      <h7>{{tweet}}</h7>
+    </section>
+  <iframe class="Song"src={{video}} width="480" height="40"></iframe>
+  </body> 
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
