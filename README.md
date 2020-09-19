@@ -8,7 +8,8 @@ This web app is dedicated to Kendrick Lamar. It allows users see his songs, view
 - Python
 -	Flask
 -	Add-on libraries (os, requests, json, requests_oauthlib)
--	Deployed via [Heroku](https://afternoon-everglades-32362.herokuapp.com/)
+-	Deployed via [Heroku]
+- Check it out here: (https://afternoon-everglades-32362.herokuapp.com/)
 
 
 
